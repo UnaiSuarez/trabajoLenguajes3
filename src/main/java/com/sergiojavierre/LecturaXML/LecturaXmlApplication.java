@@ -15,6 +15,7 @@ public class LecturaXmlApplication {
 
 
 		DAOFactory.getInstance().getDaoUsers().add(new Jugador("unai"));
+		System.out.println(DAOFactory.getInstance().getDaoUsers().getAll());
 
 	}
 

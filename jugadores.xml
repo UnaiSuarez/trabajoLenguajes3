@@ -1,14 +1,1 @@
-<data>
-    <users>
-        <users id="2" nombre="unai">
-            <videojuegos/>
-            <componentes/>
-        </users>
-    </users>
-    <jugadores>
-        <jugador id="2" nombre="unai">
-            <videojuegos/>
-            <componentes/>
-        </jugador>
-    </jugadores>
-</data>
+<data><jugadores><jugador id="2" nombre="unai"><videojuegos/><componentes/></jugador></jugadores></data>

@@ -21,11 +21,11 @@ public class Data {
         else this.jugadores = new ArrayList<>();
     }
 
-    public List<Jugador> getUsers() {
+    public List<Jugador> getJugadores() {
         return jugadores;
     }
 
-    public void setUsers(List<Jugador> jugadores) {
+    public void setJugadores(List<Jugador> jugadores) {
         this.jugadores = jugadores;
     }
 }

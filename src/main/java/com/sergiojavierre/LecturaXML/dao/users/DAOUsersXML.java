@@ -20,7 +20,7 @@ public class DAOUsersXML implements DAOUsers{
 
     @Override
     public Integer add(Jugador jugador) {
-        List<Jugador>jugadores = new ArrayList<>();
+        List<Jugador>jugadores = getAll();
         jugadores.add(jugador);
         int lastId = jugadores.get(jugadores.size()-1).getId(); // tomo el último
         jugador.setId(lastId + 1);
@@ -48,7 +48,7 @@ public class DAOUsersXML implements DAOUsers{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return data.getUsers();
+        return data.getJugadores();
     }
 
     @Override
