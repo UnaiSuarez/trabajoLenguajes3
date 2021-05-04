@@ -1,4 +1,4 @@
-package com.sergiojavierre.LecturaXML.entities;
+package com.unai.entities;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;

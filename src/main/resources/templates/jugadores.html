@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Datos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Jugadores</h1>
+<div th:each="jugador: ${jugadores}">
+    <label>Nombre:</label>
+    <label th:text="${jugador.nombre}"/>
+    <ul>
+        <h4>Videojuegos</h4>
+        <li th:each="videojuego: ${jugador.videojuegos}">
+            <label th:text="${videojuego.nombre}"/>
+        </li>
+    </ul>
+    <ul>
+        <h4>Componentes</h4>
+        <li th:each="componente: ${jugador.componentes}">
+            <label th:text="${componente.id}"/>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

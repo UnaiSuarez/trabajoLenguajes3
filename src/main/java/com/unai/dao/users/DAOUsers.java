@@ -1,8 +1,8 @@
-package com.sergiojavierre.LecturaXML.dao.users;
+package com.unai.dao.users;
 
-import com.sergiojavierre.LecturaXML.entities.Componente;
-import com.sergiojavierre.LecturaXML.entities.Jugador;
-import com.sergiojavierre.LecturaXML.entities.Videojuegos;
+import com.unai.entities.Componente;
+import com.unai.entities.Jugador;
+import com.unai.entities.Videojuegos;
 
 import java.util.List;
 

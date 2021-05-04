@@ -1,1 +1,45 @@
-<data><jugadores><jugador id="2" nombre="unai"><videojuegos/><componentes/></jugador></jugadores></data>
+<data>
+    <jugadores>
+        <jugador id="1" nombre="unai">
+            <videojuegos>
+                <videojuego nombre="cyberpunk"/>
+                <videojuego nombre="assassins creed"/>
+            </videojuegos>
+            <componentes>
+                <componente id="1"/>
+                <componente id="2"/>
+            </componentes>
+        </jugador>
+        <jugador id="2" nombre="pepe">
+            <videojuegos>
+                <videojuego nombre="cyberpunk"/>
+                <videojuego nombre="horizon zero down"/>
+            </videojuegos>
+            <componentes>
+                <componente id="3"/>
+            <componente id="4"/>
+        </componentes>
+        </jugador>
+        <jugador id="3" nombre="juan">
+            <videojuegos>
+                <videojuego nombre="cod"/>
+            </videojuegos>
+            <componentes>
+                <componente id="2"/>
+                <componente id="4"/>
+            </componentes>
+        </jugador>
+        <jugador id="4" nombre="alejandra">
+            <videojuegos>
+                <videojuego nombre="cod"/>
+                <videojuego nombre="genshin impact"/>
+                <videojuego nombre="death stranding"/>
+                <videojuego nombre="GTA 5"/>
+            </videojuegos>
+            <componentes>
+                <componente id="2"/>
+                <componente id="4"/>
+            </componentes>
+        </jugador>
+    </jugadores>
+</data>

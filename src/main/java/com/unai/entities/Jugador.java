@@ -1,4 +1,4 @@
-package com.sergiojavierre.LecturaXML.entities;
+package com.unai.entities;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
@@ -9,7 +9,7 @@ import java.util.List;
 
 @JacksonXmlRootElement(localName = "jugador")
 public class Jugador {
-    public static Integer nextId = 1;
+    public static Integer nextId = 0;
     @JacksonXmlProperty(isAttribute = true)
     private int id;
     @JacksonXmlProperty(isAttribute = true)
@@ -52,10 +52,6 @@ public class Jugador {
         componentes.add(componente);
     }
 
-    public void setComponentes(List<Componente> componentes) {
-        this.componentes = componentes;
-    }
-
     public void addVideojuego(Videojuegos videojuego){
         if(this.videojuegos == null){
             this.videojuegos = new ArrayList<>();
@@ -63,8 +59,12 @@ public class Jugador {
         videojuegos.add(videojuego);
     }
 
-    public void setVideojuego(List<Videojuegos> videojuegos) {
-        this.videojuegos = videojuegos;
+    public List<Componente> getComponentes() {
+        return componentes;
+    }
+
+    public List<Videojuegos> getVideojuegos() {
+        return videojuegos;
     }
 
     @Override

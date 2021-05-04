@@ -1,5 +1,6 @@
-package com.sergiojavierre.LecturaXML.entities;
+package com.unai.entities;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
@@ -13,5 +14,16 @@ public class Componente {
 
     public Componente(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Componente{" +
+                "id=" + id +
+                '}';
+    }
+
+    public int getId() {
+        return id;
     }
 }

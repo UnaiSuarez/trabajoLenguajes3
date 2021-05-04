@@ -1,18 +1,16 @@
-package com.sergiojavierre.LecturaXML.dao.users;
+package com.unai.dao.users;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.sergiojavierre.LecturaXML.entities.Componente;
-import com.sergiojavierre.LecturaXML.entities.Jugador;
-import com.sergiojavierre.LecturaXML.entities.Data;
-import com.sergiojavierre.LecturaXML.entities.Videojuegos;
+import com.unai.entities.Componente;
+import com.unai.entities.Jugador;
+import com.unai.entities.Data;
+import com.unai.entities.Videojuegos;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class DAOUsersXML implements DAOUsers{
 
@@ -21,9 +19,9 @@ public class DAOUsersXML implements DAOUsers{
     @Override
     public Integer add(Jugador jugador) {
         List<Jugador>jugadores = getAll();
-        jugadores.add(jugador);
         int lastId = jugadores.get(jugadores.size()-1).getId(); // tomo el último
         jugador.setId(lastId + 1);
+        jugadores.add(jugador);
         save(jugadores);
         return Jugador.nextId;
     }
