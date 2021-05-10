@@ -17,8 +17,8 @@
             </videojuegos>
             <componentes>
                 <componente id="3"/>
-            <componente id="4"/>
-        </componentes>
+                <componente id="4"/>
+            </componentes>
         </jugador>
         <jugador id="3" nombre="juan">
             <videojuegos>

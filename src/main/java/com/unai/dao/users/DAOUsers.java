@@ -13,5 +13,6 @@ public interface DAOUsers {
     public Jugador search(Integer id);
     public void addVideojuego(Integer id, Videojuegos videojuegos);
     public void addComponente(Integer id, Componente componente);
+    public void save(List<Jugador> jugadores);
 
 }

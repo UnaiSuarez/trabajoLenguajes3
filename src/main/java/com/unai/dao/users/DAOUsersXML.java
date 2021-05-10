@@ -25,8 +25,8 @@ public class DAOUsersXML implements DAOUsers{
         save(jugadores);
         return Jugador.nextId;
     }
-
-    private void save(List<Jugador> jugadores){
+    @Override
+    public void save(List<Jugador> jugadores){
         Data dataContainer = new Data(jugadores);
         XmlMapper xmlMapper = new XmlMapper();
         try {
